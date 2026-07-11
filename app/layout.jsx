@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import CursorGlow from '@/components/CursorGlow';
+import SmoothScroll from '@/components/SmoothScroll';
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="dark-mode">
+        <SmoothScroll />
         <CursorGlow />
         <Navbar />
         {children}
